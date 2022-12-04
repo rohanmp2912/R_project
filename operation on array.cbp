@@ -29,7 +29,7 @@
 			</Target>
 		</Build>
 		<Compiler>
-			<Add option="-Wall" />
+			<Add option="-Wall"/>
 		</Compiler>
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
