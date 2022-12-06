@@ -4,4 +4,4 @@ emp.data<-data.frame(
     salary=c(100000,5000,70000)
 )
 emp.data
-#i can access
+#i can access through r studio isnt it great
