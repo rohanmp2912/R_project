@@ -1,28 +1,55 @@
-Bus
-Vishal
-Reshma
-Navadurga Prasad
-Srilaxmi
-Kusuma
-Milan
-Vishal
-Mercy
-Navadurga Prasad
-Keerthi
-Navadurga Prasad
-Sangam
-Laxmi Ganesh
-Padmambikaa
-Vishal
-Shahil
-Vishal
-Vishal
-Christa Jyothi
-Vishal
-Navadurga Prasad
-Sangam
-Bharathi
-Bharathi
-Navadurga Prasad
-Vishal
-Milan
+Bus,Type,Source,Nitte,Karkala
+Vishal,Express,Mangalore,07:30,07:30
+Reshma,Hybrid,Udupi,07:32,07:32
+Navadurga Prasad,Express,Shivmogga,07:35,07:35
+Srilaxmi,Local,Kateel,07:51,07:51
+Kusuma,Express,Mangalore,08:03,08:03
+Milan,Local,Udupi,08:08,08:08
+Vishal,Express,Mangalore,08:10,08:10
+Mercy,Local,Mangalore,08:22,08:22
+Navadurga Prasad,Express,Mangalore,08:36,08:36
+Keerthi,Local,Udupi,08:37,08:37
+Navadurga Prasad,Express,Mangalore,08:41,08:41
+Sangam,Local,Udupi,09:17,09:17
+Laxmi Ganesh,Express,Mangalore,09:20,09:20
+Padmambikaa,Express,Mangalore,10:17,10:17
+Vishal,Express,Mangalore,11:33,11:33
+Shahil,Local,Udupi via Padubidri,12:03,12:03
+Vishal,Express,Mangalore,12:05,12:05
+Vishal,Express,Mangalore,12:11,12:11
+Christa Jyothi,Local,Udupi,12:11,12:11
+Vishal,Express,Mangalore,12:16,12:16
+Navadurga Prasad,Express,Mangalore,12:24,12:24
+Sangam,Local,Mulki,12:43,12:43
+Bharathi,Express,Padubidri,12:44,12:44
+Bharathi,Express,Udupi,12:50,12:50
+Navadurga Prasad,Express,Mangalore,12:52,12:52
+Vishal,Express,Mangalore,01:03,01:03
+Milan,Local,Udupi,01:10,01:10
+Sangam,Local,Udupi,01:16,01:16
+Laxmi Ganesh,Express,Mangalore,01:23,01:23
+Reshma,Express,Mangalore,01:35,01:35
+Christa Jyothi,Local,Udupi,01:43,01:43
+Padmambikaa,Express,Mangalore,01:47,01:47
+Pranam,Local,Kateel,02:06,02:06
+Sangam,Local,Udupi,02:15,02:15
+Rashmi Travels,Local,Kateel,02:25,02:25
+Naveen,Local,Udupi,02:36,02:36
+Padmambikaa,Express,Mangalore,02:51,02:51
+Christa Kiran,Express,Mangalore,02:54,02:54
+Naveen,Local,Udupi,03:06,03:06
+Padmambikaa,Express,Mangalore,03:09,03:09
+Vishal,Express,Mangalore,03:24,03:24
+Ayra,Express,Mangalore,03:28,03:28
+Sangam,Local,Udupi,03:40,03:40
+Vishal,Express,Mangalore,03:43,03:43
+Shree Annapoorneshwari,Express,Mangalore,03:55,03:55
+Mercy,Express,Mangalore,04:08,04:08
+Navadurga Prasad,Express,Mangalore,04:12,04:12
+Kanthi,Local,Udupi,04:21,04:21
+Vishal,Express,Mangalore,04:26,04:26
+Vishal,Express,Mangalore,04:40,04:40
+Sangam,Local,Udupi,04:44,04:44
+Vishal,Express,Mangalore,04:46,04:46
+Vishal,Express,Mangalore,04:59,04:59
+Pranam,Local,Kateel,05:07,05:07
