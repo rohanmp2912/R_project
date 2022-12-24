@@ -4,7 +4,7 @@ kton = read.csv("C:/Users/Dell/git/R_project/karlatonitte24.csv")
 utok = read.csv("C:/Users/Dell/git/R_project/udupitokarla24.csv")        #All CSV files are Invoked Here
 btime = function (z = Sys.time(), bustime = ntok) {                      #function to return time at the destination by taking time and dataframe as  argument
   z = format(z, format = "%H:%M")                                        #converting into a format of hours:min
-  c = 0
+  c = 0                                                                  #initializing count variable to 0
   j=0
   t=r=format("00:00",format = "%H:%M")
   for (i in bustime[[3]]) {
@@ -42,21 +42,27 @@ main = function() {
     if(obj1==4)  break
     cat("To :\n1->nitte\n2->Karkala\n3->Udupi\n4->Quit")
     obj2 = as.integer(readline())
-    if(obj1==4)  break
+    if(obj2==4)  break
     cat("Enter the time : ")
     z = strptime(readline(), format = "%H:%M")
     cat("Enter AM/PM :")
     f=readline()
-    if(f[[1]]=="PM")  z=z+43200
+    if(f[[1]]=="PM" && z<strptime("12:00",format="%H:%M")){
+      z=z+43200
+    }
+    else if(z>=12:00 && f[[1]]=="AM") z=z-43200
     if ((obj2 - obj1) >= 0) {
-      i = obj1
-      while (i <= (obj2 - obj1)) {
+      i=obj1
+      while (i < obj2) {
+        print(i)
         z = btime(z, h[[as.integer(i)]])
         i = i + 1
       }
     }else{
-      i = obj2 - obj1
-      while (i < 0) {
+      i = -obj1+1 
+      while (i <= -obj2) {
+        print(i)
+        print(z)
         z = btime(z, h[[as.integer(i)]])
         i = i + 1
       }
