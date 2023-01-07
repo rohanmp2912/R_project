@@ -1,11 +1,13 @@
 ntok = read.csv("C:/Users/Dell/git/R_project/bus24.csv")
 ktou = read.csv("C:/Users/Dell/git/R_project/karlatoudp24.csv")
 kton = read.csv("C:/Users/Dell/git/R_project/karlatonitte24.csv")
-utok = read.csv("C:/Users/Dell/git/R_project/udupitokarla24.csv")        #All CSV files are Invoked Here
+utok = read.csv("C:/Users/Dell/git/R_project/udupitokarla24.csv")
+ntop = read.csv("C:/Users/Dell/git/R_project/Nitte to Padubidri.csv")
+ptou =read.csv("C:/Users/Dell/git/R_project/Padubidri to udupi.csv")        #All CSV files are Invoked Here
 btime = function (z = Sys.time(), bustime = ntok) {                      #function to return time at the destination by taking time and dataframe as  argument
   z = format(z, format = "%H:%M")                                        #converting into a format of hours:min
   c = 0                                                                  #initializing count variable to 0
-  j=0
+  j=0                                                                    #  Initializing j=0 which keeps track in which row i is
   t=r=format("00:00",format = "%H:%M")
   for (i in bustime[[3]]) {
     j=j+1
@@ -30,11 +32,11 @@ btime = function (z = Sys.time(), bustime = ntok) {                      #functi
 }
 
 main = function() {
-  h = hashtab()
-  h[[1L]]=ntok
-  h[[2L]]=ktou
-  h[[-2L]]=utok
-  h[[-1L]]=kton
+  l1 = list("Nitte",ntok,ntop)
+  l2=list("Karkala",ktou,kton)
+  l3=list("Udupi",NULL,utok)
+  l4=list("Padubidri",NULL,ptou)
+  x = array(c(l1,l2,l3,l4),dim = c(3,4))
   btime()
   repeat {
     cat("From :\n1->Nitte\n2->Karkala\n3->Udupi\n4->Quit")
@@ -54,17 +56,14 @@ main = function() {
     if ((obj2 - obj1) >= 0) {
       i=obj1
       while (i < obj2) {
-        print(i)
-        z = btime(z, h[[as.integer(i)]])
+        z = btime(z, x[2,i][[1]])
         i = i + 1
       }
     }else{
-      i = -obj1+1 
-      while (i <= -obj2) {
-        print(i)
-        print(z)
-        z = btime(z, h[[as.integer(i)]])
-        i = i + 1
+      i=obj1
+      while (i > obj2) {
+        z = btime(z, x[3,i][[1]])
+        i = i - 1
       }
     }
   }
