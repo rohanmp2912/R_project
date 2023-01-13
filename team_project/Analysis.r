@@ -3,10 +3,11 @@ ktou = read.csv("C:/Users/Dell/git/R_project/karlatoudp24.csv")
 kton = read.csv("C:/Users/Dell/git/R_project/karlatonitte24.csv")
 utok = read.csv("C:/Users/Dell/git/R_project/udupitokarla24.csv")
 ntop = read.csv("C:/Users/Dell/git/R_project/Nitte to Padubidri.csv")
-ptou =read.csv("C:/Users/Dell/git/R_project/Padubidri to udupi.csv")        #All CSV files are Invoked Here
-btime = function (z = Sys.time(), bustime = ntok) {                      #function to return time at the destination by taking time and dataframe as  argument
-  z = format(z, format = "%H:%M")                                        #converting into a format of hours:min
-  c = 0                                                                  #initializing count variable to 0
+ptou =read.csv("C:/Users/Dell/git/R_project/Padubidri to udupi.csv")        # All CSV files are Invoked Here
+
+btime = function (z = Sys.time(), bustime = ntok) {                      #  function to return time at the destination by taking time and dataframe as  argument
+  z = format(z, format = "%H:%M")                                        #  converting into a format of hours:min
+  c = 0                                                                  #  initializing count variable to 0
   j=0                                                                    #  Initializing j=0 which keeps track in which row i is
   t=r=format("00:00",format = "%H:%M")
   for (i in bustime[[3]]) {
