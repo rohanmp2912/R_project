@@ -9,7 +9,7 @@ btime = function (z = Sys.time(), bustime = ntok) {                      #  func
   z = format(z, format = "%H:%M")                                        #  converting into a format of hours:min
   c = 0                                                                  #  initializing count variable to 0
   j=0                                                                    #  Initializing j=0 which keeps track in which row i is
-  t=r=format("00:00",format = "%H:%M")
+  t=r=format("00:00",format = "%H:%M")                                   #  training t and r to hold the values of time format
   for (i in bustime[[3]]) {
     j=j+1
     if (c < 2) {
@@ -53,7 +53,7 @@ main = function() {
     if(f[[1]]=="PM" && z<strptime("12:00",format="%H:%M")){
       z=z+43200
     }
-    else if(z>=12:00 && f[[1]]=="AM") z=z-43200
+    else if(z>=strptime("12:00",format="%H:%M") && f[[1]]=="AM") z=z-43200
     if ((obj2 - obj1) >= 0) {
       i=obj1
       while (i < obj2) {
