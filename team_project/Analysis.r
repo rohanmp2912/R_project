@@ -17,6 +17,8 @@ btime = function (z = Sys.time(), bustime = ntok) {                      #  func
         t=i
         t=format(strptime(t,format="%H:%M"),format = "%I:%M")
         cat("Next bus is AT : ", t, "\n")
+        cat("Bus is:",bustime[[1]][[j]],"\n")
+        cat("Have a nice Journey \n")
         c = c + 1
         if(c==1){
           r=bustime[[4]][[j]]
@@ -27,7 +29,9 @@ btime = function (z = Sys.time(), bustime = ntok) {                      #  func
   }
   if(c==0){
     cat("Your next bus is Tomorrow at : ",bustime[[3]][[1]],"\n")
+    cat("Bus is :",bustime[[1]][[1]],"\n")
     cat("Your next bus is Tomorrow at : ",bustime[[3]][[2]],"\n")
+    cat("Bus is :",bustime[[1]][[2]],"\n")
   }
   return(r)
 }
