@@ -16,9 +16,8 @@ btime = function (z = Sys.time(), bustime = ntok) {                      #  func
       if (i > z) {
         t=i
         t=format(strptime(t,format="%H:%M"),format = "%I:%M")
-        cat("Next bus is AT : ", t, "\n")
-        cat("Bus is:",bustime[[1]][[j]],"\n")
-        cat("Have a nice Journey \n")
+          cat("Next bus is", bustime[[1]][[j]], "AT:",t,"\n")
+       
         c = c + 1
         if(c==1){
           r=bustime[[4]][[j]]
@@ -44,11 +43,9 @@ main = function() {
   x = array(c(l1,l2,l3,l4),dim = c(3,4))
   btime()
   repeat {
-    cat("From :\n1->Nitte\n2->Karkala\n3->Udupi\n4->Quit")
-    obj1 = as.integer(readline())
+    obj1 = as.integer(readline(prompt="From :\n1->Nitte\n2->Karkala\n3->Udupi\n4->Quit\n"))
     if(obj1==4)  break
-    cat("To :\n1->nitte\n2->Karkala\n3->Udupi\n4->Quit")
-    obj2 = as.integer(readline())
+   obj2 = as.integer(readline(prompt="To :\n1->nitte\n2->Karkala\n3->Udupi\n4->Quit\n"))
     if(obj2==4)  break
     cat("Enter the time : ")
     z = strptime(readline(), format = "%H:%M")
@@ -63,6 +60,8 @@ main = function() {
       while (i < obj2) {
         z = btime(z, x[2,i][[1]])
         i = i + 1
+        cat("You will reach the destnation at",z,"\n")
+        cat("Have a nice Journey\n")
       }
     }else{
       i=obj1
